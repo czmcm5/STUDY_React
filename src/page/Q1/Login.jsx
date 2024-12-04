@@ -94,7 +94,7 @@ const Login = () => {
           placeholder="비밀번호"
           value={pw}
           onChange={setting_pw}
-          onKeyPress={(e) => enterPress(e)}
+          onKeyPress={enterPress}
         />
 
         <CheckBox className={`${check && "check"} end`} onClick={setting_check}>
